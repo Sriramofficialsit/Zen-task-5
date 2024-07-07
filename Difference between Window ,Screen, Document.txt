@@ -1,0 +1,18 @@
+Scope and Purpose:
+
+window: Represents the browser window or tab, providing access to browser features and controlling the window's behavior.
+document: Represents the HTML document loaded in the window, offering methods to interact with its content and structure.
+screen: Represents the user's screen or monitor, providing information about its dimensions and properties.
+
+
+Global Object:
+
+window: Acts as the global object in the browser environment, with global variables and functions becoming properties and methods of the window object.
+document: Is a property of the window object, representing the current document loaded in the window.
+screen: Also a property of the window object, representing the user's screen or monitor.
+
+Functionality:
+
+window: Provides methods for controlling the browser window, managing history, interacting with frames and iframes, etc.
+document: Provides methods for manipulating the content of the HTML document, such as selecting elements, modifying attributes, handling events, etc.
+screen: Provides read-only properties describing the characteristics of the user's screen, such as width, height, color depth, etc.

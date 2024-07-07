@@ -1,0 +1,48 @@
+const resume = {
+    "basics": {
+        "name": "Sriram",
+        "label": "Software Engineer",
+        "email": "sriramofficial.sit@gmail.com",
+        "phone": "1234567890",
+        "location": {
+        "address": "123 Main St",
+        "city":"Chennai",
+        "postalCode": "12345",
+        "countryCode": "INDIA",
+        "region": "Tamilnadu"
+        }
+    },
+    "work": [
+        {
+            "company": "Tech Solutions Inc.",
+            "position": "Software Engineer",
+            "startDate": "2021-01-01",
+            "endDate": "2021-12-31",
+            "summary": "Developed web applications using modern technologies."
+        },
+       
+    ],
+    "skills": ["JavaScript", "Python", "HTML/CSS", "React", "Node.js"],
+    "interests": ["Reading", "Hiking", "Photography"]
+  };
+  // 1. For Loop
+  for (let i = 0; i < resume.skills.length; i++) {
+    console.log(`Skill ${i + 1}: ${resume.skills[i]}`);
+  }
+  
+  // 2. For-In Loop
+  for (const key in resume.basics) {
+    if (resume.basics.hasOwnProperty(key)) {
+        console.log(`${key}: ${resume.basics[key]}`);
+    }
+  }
+  
+  // 3. For-Of Loop (for arrays)
+  for (const interest of resume.interests) {
+    console.log(`Interest: ${interest}`);
+  }
+  
+  // 4. Array.forEach (for arrays)
+  resume.work.forEach((experience, index) => {
+    console.log(`Work Experience ${index + 1}: ${experience.company}, ${experience.position}`);
+  });
